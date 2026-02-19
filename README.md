@@ -21,9 +21,9 @@ Movement is restricted to:
 This solver uses A* search : f(n)=g(n)+h(n)
 
 Where:
-g(n) = number of jumps taken so far (aka the total cost, each jump constitutes a cost of 1)
-h(n) = Manhattan distance heuristic
-f(n) = estimated total cost
+  - g(n) = number of jumps taken so far (aka the total cost, each jump constitutes a cost of 1)
+  - h(n) = Manhattan distance heuristic
+  - f(n) = estimated total cost
 
 
 🧩 **Features**
