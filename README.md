@@ -18,7 +18,7 @@ Movement is restricted to:
 
 🚀 **Algorithm**
 
-This solver uses A* search : f(n)=g(n)+h(n)
+This solver uses A* search : `f(n) = g(n) + h(n)`
 
 Where:
   - g(n) = number of jumps taken so far (aka the total cost, each jump constitutes a cost of 1)
