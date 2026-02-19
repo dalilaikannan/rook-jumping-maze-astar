@@ -31,7 +31,7 @@ f(n) = estimated total cost
   - Manhattan distance heuristic
   - Priority queue optimization
   - Edge case handling (start = goal)
-  🔜 GUI visualization (in progress)
+  - GUI visualization (in progress)
 
 
 **To Run**
