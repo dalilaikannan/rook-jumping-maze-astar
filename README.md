@@ -27,11 +27,11 @@ f(n) = estimated total cost
 
 
 🧩 **Features**
-    - A* search implementation
-    - Manhattan distance heuristic
-    - Priority queue optimization
-    - Edge case handling (start = goal)
-    🔜 GUI visualization (in progress)
+  - A* search implementation
+  - Manhattan distance heuristic
+  - Priority queue optimization
+  - Edge case handling (start = goal)
+  🔜 GUI visualization (in progress)
 
 
 **To Run**
