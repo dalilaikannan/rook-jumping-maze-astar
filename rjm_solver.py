@@ -2,16 +2,26 @@ import random
 import heapq
 
 def randomize_start_and_goal():
+    """
+    Returns a random start position and goal position.
+    """
     n = len(rjm_grid)
     start = (random.randint(0, n-1), random.randint(0, n-1))
     goal = (random.randint(0, n-1), random.randint(0, n-1))
     return [start, goal]
 
-
 def calculate_md(pos, goal):
+    """
+    Calculates and returns the heuristic value from any given (x , y) to the goal.
+    This particular example uses the absolute value of Manhattan Distance as the heuristic.
+    | (x_goal - x_pos, y_goal, y_pos) | 
+    """
     return abs((pos[0] - goal[0]) + (pos[1] - goal[1]))
 
 def get_neighbors(pos):
+    """
+    Returns all neighbors given a position (x , y). 
+    """
     neighbors = []
     jump = rjm_grid[pos[0]][pos[1]]
 
@@ -30,9 +40,12 @@ def get_neighbors(pos):
 
     return neighbors
 
-# reminder: the start and goal can be in the same spot, the randomizer function does not omit that case
-# in this example the cost of every jump is 1
 def a_star_search(start, goal, grid):
+    """
+    Implements the A* search to find the optimal path from start to goal.
+    This particular problem assumes the cost of each jump to be 1.
+    Start and goal may be in the same spot, this case is not omitted. 
+    """
     # in the queue, heuristic, total cost, current node, path
     tracker = []
     heapq.heappush(tracker, (calculate_md(start, goal), 0, start, [start]))
