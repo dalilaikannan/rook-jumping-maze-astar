@@ -14,7 +14,7 @@ def calculate_md(pos, goal):
     """
     Calculates and returns the heuristic value from any given (x , y) to the goal.
     This particular example uses the absolute value of Manhattan Distance as the heuristic.
-    | (x_goal - x_pos, y_goal, y_pos) | 
+    | (x_pos - x_goal, y_pos, y_goal) | 
     """
     return abs((pos[0] - goal[0]) + (pos[1] - goal[1]))
 
